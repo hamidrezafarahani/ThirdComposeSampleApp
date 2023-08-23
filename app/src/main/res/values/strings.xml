@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ThirdComposeSampleApp</string>
+    <string name="placeholder_search">Search</string>
 </resources>
