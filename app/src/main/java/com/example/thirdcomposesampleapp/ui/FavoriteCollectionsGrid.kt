@@ -28,7 +28,8 @@ fun FavoriteCollectionsGrid(
         items(Repository.favoriteCollectionsData) {
             FavoriteCollectionCard(
                 drawable = it.drawable,
-                title = it.text
+                title = it.text,
+                modifier = Modifier.height(56.dp)
             )
         }
     }

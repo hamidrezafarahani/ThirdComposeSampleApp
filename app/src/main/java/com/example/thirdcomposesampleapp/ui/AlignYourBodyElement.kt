@@ -35,7 +35,7 @@ fun AlignYourBodyElement(
         Image(
             painter = painterResource(id = drawable),
             contentDescription = null,
-            modifier = modifier
+            modifier = Modifier
                 .size(88.dp)
                 .clip(CircleShape),
             contentScale = ContentScale.Crop
@@ -43,7 +43,7 @@ fun AlignYourBodyElement(
         Text(
             text = stringResource(id = text),
             style = MaterialTheme.typography.bodyMedium,
-            modifier = modifier.paddingFromBaseline(top = 24.dp, bottom = 8.dp)
+            modifier = Modifier.paddingFromBaseline(top = 24.dp, bottom = 8.dp)
         )
     }
 }

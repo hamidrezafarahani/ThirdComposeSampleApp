@@ -33,19 +33,19 @@ fun FavoriteCollectionCard(
         shape = MaterialTheme.shapes.medium
     ) {
         Row(
-            modifier = modifier.width(255.dp),
+            modifier = Modifier.width(255.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
             Image(
                 painter = painterResource(id = drawable),
                 contentDescription = null,
                 contentScale = ContentScale.Crop,
-                modifier = modifier.size(80.dp)
+                modifier = Modifier.size(80.dp)
             )
             Text(
                 text = stringResource(id = title),
                 style = MaterialTheme.typography.titleMedium,
-                modifier = modifier.padding(horizontal = 16.dp)
+                modifier = Modifier.padding(horizontal = 16.dp)
             )
         }
     }

@@ -11,11 +11,11 @@ import com.example.thirdcomposesampleapp.ui.theme.ThirdComposeSampleAppTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun MySootheAppPortrait(modifier: Modifier = Modifier) {
+fun MySootheAppPortrait() {
     Scaffold(
         bottomBar = { SootheBottomNavigation() }
     ) {
-        HomeScreen(modifier = modifier.padding(it))
+        HomeScreen(modifier = Modifier.padding(it))
     }
 }
 

@@ -14,6 +14,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.thirdcomposesampleapp.R
 import com.example.thirdcomposesampleapp.ui.theme.ThirdComposeSampleAppTheme
+import java.util.Locale
 
 @Composable
 fun HomeSection(
@@ -21,11 +22,11 @@ fun HomeSection(
     modifier: Modifier = Modifier,
     content: @Composable () -> Unit
 ) {
-    Column {
+    Column(modifier = modifier) {
         Text(
-            text = stringResource(id = title),
+            text = stringResource(id = title).uppercase(Locale.getDefault()),
             style = MaterialTheme.typography.titleMedium,
-            modifier = modifier
+            modifier = Modifier
                 .padding(horizontal = 16.dp)
                 .paddingFromBaseline(bottom = 16.dp, top = 40.dp)
         )
