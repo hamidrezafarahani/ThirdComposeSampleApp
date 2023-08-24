@@ -19,15 +19,15 @@ fun HomeScreen(
     modifier: Modifier = Modifier
 ) {
     Column(modifier.verticalScroll(rememberScrollState())) {
-        Spacer(modifier = modifier.height(16.dp))
-        SearchBar(modifier = modifier.padding(horizontal = 16.dp))
+        Spacer(modifier = Modifier.height(16.dp))
+        SearchBar(modifier = Modifier.padding(horizontal = 16.dp))
         HomeSection(title = R.string.align_your_body) {
             AlignYourBodyRow()
         }
         HomeSection(title = R.string.favorite_collections) {
             FavoriteCollectionsGrid()
         }
-        Spacer(modifier = modifier.height(16.dp))
+        Spacer(modifier = Modifier.height(16.dp))
     }
 }
 
